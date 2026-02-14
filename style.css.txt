@@ -1,0 +1,16 @@
+body {
+    text-align: center;
+    font-family: Arial;
+}
+
+#array {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.bar {
+    width: 20px;
+    margin: 2px;
+    background-color: blue;
+}
