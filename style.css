@@ -1,16 +1,85 @@
+/* ========================================
+   Project: Algorithm Visualizer
+   Designed & Developed by: Jyoti Patil
+======================================== */
+
 body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white;
     text-align: center;
-    font-family: Arial;
 }
 
-#array {
-    display: flex;
-    justify-content: center;
+.header {
     margin-top: 20px;
 }
 
-.bar {
-    width: 20px;
-    margin: 2px;
-    background-color: blue;
+.subtitle {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #cccccc;
+}
+
+.author {
+    font-size: 14px;
+    color: #00adb5;
+}
+
+.controls {
+    margin: 20px;
+}
+
+select, input, button {
+    padding: 8px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    cursor: pointer;
+    background-color: #00adb5;
+    color: white;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #008c93;
+}
+
+#visualization {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    min-height: 150px;
+}
+
+.bubble {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    background-color: #2196f3;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+/* States */
+.compare { background-color: red; }
+.swap { background-color: yellow; color: black; }
+.sorted { background-color: green; }
+.target { background-color: purple; }
+.found { background-color: lime; color: black; }
+
+#explanation {
+    margin: 40px auto;
+    padding: 15px;
+    width: 60%;
+    background: rgba(255,255,255,0.1);
+    border-radius: 8px;
 }

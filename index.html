@@ -1,18 +1,50 @@
 <!DOCTYPE html>
+<!--
+Project: Algorithm Visualizer
+Interactive Searching and sorting visualizer 
+Designed & Developed by: Jyoti Patil
+Year: 2026
+-->
+
 <html>
 <head>
-    <title>Algorithm Visualizer</title>
+    <title>Algorithm Visualizer | Jyoti Patil</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <h1>Algorithm Visualizer</h1>
+    <div class="header">
+        <h1>Algorithm Visualizer</h1>
+        <p class="subtitle">Interactive Algorithm Visualizer</p>
+        <p class="author">Designed & Developed by Jyoti Patil</p>
+    </div>
 
-    <button onclick="generateArray()">Generate Array</button>
-    <button onclick="bubbleSort()">Bubble Sort</button>
+    <div class="controls">
+        <select id="algorithm">
+            <option value="bubble">Bubble Sort</option>
+            <option value="selection">Selection Sort</option>
+            <option value="insertion">Insertion Sort</option>
+            <option value="linear">Linear Search</option>
+            <option value="binary">Binary Search</option>
+        </select>
 
-    <div id="array"></div>
+        <input type="number" id="target" placeholder="Target" style="display:none;">
 
-    <script src="script.js"></script>
+        <label>Speed</label>
+        <input type="range" id="speed" min="50" max="1000" value="300">
+
+        <button onclick="generateArray()">Generate</button>
+        <button onclick="startAlgorithm()">Start</button>
+    </div>
+
+    <div id="visualization"></div>
+
+    <div id="explanation">
+        Step explanation will appear here...
+    </div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
